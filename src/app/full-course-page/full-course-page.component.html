@@ -1,1 +1,28 @@
-<p>full-course-page works!</p>
+<div class="container">
+  <section>
+    <div class="row row-cols-1 course">
+      @for(course of courses; track course; let i = $index){
+      <div class="cards d-flex justify-content-around align-items-center">
+        <div class="card-img">
+          <a routerLink="/full-course-page" class="card-link"
+            ><img [src]="course.image" class="img"
+          /></a>
+          <h5 class="text-center course-title">{{ course.title }}</h5>
+        </div>
+        <div class="card-body">
+          <h5 class="text-center">Course duration:</h5>
+          <p class="text-center">{{ course.duration }}</p>
+        </div>
+        <div class="card-body">
+          <h5 class="text-center">Course Fee:</h5>
+          <p class="text-center">{{ course.fee }}€</p>
+        </div>
+        <div class="card-body">
+          <h5 class="text-center">Dates:</h5>
+          <p class="text-center">{{ course.dates }}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </section>
+</div>

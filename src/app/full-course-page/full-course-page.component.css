@@ -1,0 +1,16 @@
+.card-img {
+  width: fit-content;
+}
+
+.course-title {
+  margin-top: 5px;
+}
+
+.course {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.cards {
+  margin: 15px auto;
+}

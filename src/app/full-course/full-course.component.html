@@ -1,13 +1,17 @@
 <div class="container">
   <section>
-    <h1>Full Courses</h1>
+    <h1 class="text-center">Full Courses</h1>
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
       @for(course of courses; track course; let i = $index){
-      <div class="card" style="width: 18rem">
-        <a routerLink=""><img [src]="course.image" class="card-img-top" /></a>
+      <div class="cards" style="width: 18rem">
+        <div class="card-img-top">
+          <a routerLink="/full-course-page" class="card-link"
+            ><img [src]="course.image" class="card-img-top"
+          /></a>
+        </div>
         <div class="card-body">
-          <h5 class="card-title">{{ course.title }}</h5>
-          <p class="card-text">{{ course.fee }}</p>
+          <h5 class="text-center">{{ course.title }}</h5>
+          <p class="text-center">{{ course.fee }}€</p>
         </div>
       </div>
       }
