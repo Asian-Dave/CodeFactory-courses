@@ -1,0 +1,22 @@
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-placeholder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  text-align: right;
+}
