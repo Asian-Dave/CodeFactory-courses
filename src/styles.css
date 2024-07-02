@@ -50,6 +50,17 @@ body {
   
 
 
+.carousel-control-prev{
+  display: none !important;
+}
+
+.carousel-control-next{
+  display: none !important;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
 
   /* ===================== Buttons */
   button {
