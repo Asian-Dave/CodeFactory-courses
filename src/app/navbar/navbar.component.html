@@ -1,6 +1,6 @@
 <div class="primary-header">
   <span>
-    <img class="logo" routerLink="/" src="" alt="Codefactory" />
+    <img class="logo" routerLink="/" src="/images/logos/main-logo.svg" alt="Codefactory" />
   </span>
   <div class="hamburger-menu" (click)="toggleMenu()">
     <span></span>
@@ -8,13 +8,12 @@
     <span></span>
   </div>
   <ul class="navlist" [class.active]="menuOpen" (click)="closeMenu()">
-    <li><button routerLink="/gadgets">Gadgets</button></li>
-    <li><button routerLink="/about-us">About us</button></li>
-    <li><button routerLink="/contact">Contact</button></li>
+    <li><button routerLink="/gadgets" class="nav-btn">Gadgets</button></li>
+    <li><button routerLink="/about-us"class="nav-btn">About us</button></li>
+    <li><button routerLink="/contact"class="nav-btn">Contact</button></li>
     <li class="cart-icon">
       <a routerLink="/cart" class="fab fa-opencart"> </a>
-      <span class="items-amount"
-        >( <span class="cart-amount-style"></span> )</span
+      <span class="items-amount"><span class="cart-amount-style"></span></span
       >
     </li>
   </ul>
