@@ -4,6 +4,7 @@ export interface ICourse {
   image: string;
   duration: string;
   dates: string;
+  description: string;
 }
 
 export class courseModel {
@@ -12,6 +13,7 @@ export class courseModel {
     public fee: number,
     public image: string,
     public duration: string,
-    public dates: string
+    public dates: string,
+    public description: string
   ) {}
 }
