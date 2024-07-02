@@ -17,19 +17,19 @@ export class TeachersComponent implements OnInit {
       name: 'Klausi Reiden',
       photo: './images/teachers/teacher-1.jpg',
       description:
-        'Klausi has over 10 years of experience in teaching mathematics and computer science.',
+        'Klausi is an exceptional coding instructor. His ability to break down complex programming concepts into easy-to-understand lessons has greatly enhanced my understanding of software development.',
     },
     {
       name: 'Anna Heisenberg',
       photo: './images/teachers/teacher-2.jpg',
       description:
-        'Anna specializes in physics and has a passion for helping students understand complex concepts.',
+        'Anna is a phenomenal web design teacher. Her eye for design and deep understanding of user experience have transformed the way I approach web projects.',
     },
     {
       name: 'Max Schmit',
       photo: './images/teachers/teacher-3.jpg',
       description:
-        'Max is an expert in chemistry and loves to create engaging and interactive lessons.',
+        'Max  expertise in both coding and web design is unparalleled. He seamlessly integrates both disciplines in his teaching, providing a holistic approach to building modern web applications.',
     },
   ];
   constructor() {}
