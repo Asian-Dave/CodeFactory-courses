@@ -1,1 +1,12 @@
 <p>testimonials works!</p>
+<div class="testimonials">
+  <div *ngFor="let testimonial of testimonials" class="testimonial">
+    <img
+      [src]="testimonial.photo"
+      [alt]="testimonial.name"
+      class="testimonial-photo"
+    />
+    <h3>{{ testimonial.name }}</h3>
+    <p>{{ testimonial.text }}</p>
+  </div>
+</div>
