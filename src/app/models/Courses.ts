@@ -10,7 +10,7 @@ export const fullCourse: ICourse[] = [
   {
     title: 'HTML',
     fee: 840,
-    image: '/public/images/logos/html5-original.svg',
+    image: '/images/logos/html5-original.svg',
     duration: '2 Weeks',
     dates: '08.07.2024 - 19.07.2024',
     description:
@@ -19,7 +19,7 @@ export const fullCourse: ICourse[] = [
   {
     title: 'CSS',
     fee: 840,
-    image: '/public/images/logos/css3-original.svg',
+    image: '/images/logos/css3-original.svg',
     duration: '2 Weeks',
     dates: '29.07.2024 - 09.08.2024',
     description:
@@ -28,7 +28,7 @@ export const fullCourse: ICourse[] = [
   {
     title: 'JavaScript',
     fee: 1500,
-    image: '/public/images/logos/javascript-original.svg',
+    image: '/images/logos/javascript-original.svg',
     duration: '4 Weeks',
     dates: '12.08.2024 - 06.09.2024',
     description:
