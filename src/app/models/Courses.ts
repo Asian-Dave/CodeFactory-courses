@@ -1,4 +1,4 @@
-import { ICourse, courseModel } from './courses-model';
+import { ICourse } from './courses-model';
 
 // title: string;
 // fee: number;
