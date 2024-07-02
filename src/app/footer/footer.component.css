@@ -1,0 +1,19 @@
+.footer {
+  background-image: url("/images/assets/footer-bg.jpg");
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+}
+
+.main-logo {
+  width: 100px;
+}
+p {
+  text-align: justify;
+}
+
+.footer-card {
+  width: 20rem;
+  margin: 15px auto;
+}
