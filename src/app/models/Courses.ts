@@ -10,16 +10,16 @@ export const fullCourse: ICourse[] = [
   {
     title: 'HTML',
     fee: 840,
-    image:
-      'A comprehensive HTML course is designed to introduce learners to the fundamental building blocks of web development. The course begins with an overview of HTML (HyperText Markup Language), explaining its role in structuring web content. Participants learn how to create and organize web pages using various HTML elements, such as headings, paragraphs, lists, links, images, and tables. The curriculum typically covers essential concepts like semantic HTML, which emphasizes using tags that convey the meaning of content, enhancing both accessibility and SEO. Students are guided through creating forms for user input, incorporating multimedia elements like audio and video, and understanding the importance of the Document Object Model (DOM) in manipulating HTML with JavaScript. Practical exercises and projects are integral to the course, allowing learners to build and style their web pages. Best practices for writing clean, maintainable code are emphasized throughout. Advanced topics may include HTML5 features, responsive design principles, and integration with CSS for improved aesthetics and layout control. By the end of the course, participants should be able to create well-structured, functional web pages, understand web standards, and be prepared for further study in web technologies or entry-level positions in web development.',
+    image: '/public/images/logos/html5-original.svg',
     duration: '2 Weeks',
     dates: '08.07.2024 - 19.07.2024',
-    description: '',
+    description:
+      'A comprehensive HTML course is designed to introduce learners to the fundamental building blocks of web development. The course begins with an overview of HTML (HyperText Markup Language), explaining its role in structuring web content. Participants learn how to create and organize web pages using various HTML elements, such as headings, paragraphs, lists, links, images, and tables. The curriculum typically covers essential concepts like semantic HTML, which emphasizes using tags that convey the meaning of content, enhancing both accessibility and SEO. Students are guided through creating forms for user input, incorporating multimedia elements like audio and video, and understanding the importance of the Document Object Model (DOM) in manipulating HTML with JavaScript. Practical exercises and projects are integral to the course, allowing learners to build and style their web pages. Best practices for writing clean, maintainable code are emphasized throughout. Advanced topics may include HTML5 features, responsive design principles, and integration with CSS for improved aesthetics and layout control. By the end of the course, participants should be able to create well-structured, functional web pages, understand web standards, and be prepared for further study in web technologies or entry-level positions in web development.',
   },
   {
     title: 'CSS',
     fee: 840,
-    image: '',
+    image: '/public/images/logos/css3-original.svg',
     duration: '2 Weeks',
     dates: '29.07.2024 - 09.08.2024',
     description:
@@ -28,7 +28,7 @@ export const fullCourse: ICourse[] = [
   {
     title: 'JavaScript',
     fee: 1500,
-    image: '',
+    image: '/public/images/logos/javascript-original.svg',
     duration: '4 Weeks',
     dates: '12.08.2024 - 06.09.2024',
     description:
