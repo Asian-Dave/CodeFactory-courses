@@ -2,7 +2,7 @@
   <section>
     <h1>Full Courses</h1>
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
-      @for(course of fullCourse; track course; let i = $index){
+      @for(course of courses; track course; let i = $index){
       <div class="card" style="width: 18rem">
         <a routerLink=""><img [src]="course.image" class="card-img-top" /></a>
         <div class="card-body">
