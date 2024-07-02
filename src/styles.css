@@ -6,45 +6,45 @@
 /* ===================== Global Styles */
 
 body {
-    background-color: #2E2938;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    position: relative;
+    background-color: #2E2938!important;
+    font-family: 'Montserrat', sans-serif!important;
+    color: white!important;
+    margin: 0!important;
+    padding: 0!important;
+    overflow-x: hidden!important;
+    position: relative!important;
   }
   
   /* ===================== gradient circles */
   body::before {
-    mix-blend-mode: var(--blending);
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0; 
-    left: 0;
+    mix-blend-mode: var(--blending)!important;
+    content: ""!important;
+    position: absolute!important;
+    width: 200%!important;
+    height: 100%!important;
+    top: 0!important; 
+    left: 0!important;
     background: radial-gradient(circle, #17D4E8 20%, transparent 40%) 80% 20%, 
                 radial-gradient(circle, #FF5757 20%, transparent 40%) 20% 80%, 
-                radial-gradient(circle, #17D4E8 20%, transparent 40%) 80% 80%;
-    background-repeat: no-repeat;
-    background-position: 10% 20%, 50% 50%, 80% 80%;
-    filter: blur(100px);
-    opacity: 0.6;
-    z-index: -1;
+                radial-gradient(circle, #17D4E8 20%, transparent 40%) 80% 80% !important;
+    background-repeat: no-repeat!important;
+    background-position: 10% 20%, 50% 50%, 80% 80%!important;
+    filter: blur(100px)!important;
+    opacity: 0.6!important;
+    z-index: -1!important;
   }
 
   
   /* ===================== Content */
   .container {
-    margin: 0 auto;
-    max-width: 80%;
-    padding: 20px;
+    margin: 0 auto!important;
+    width: 80%!important;
+    padding: 20px!important;
   }
   
   @media (min-width: 1100px) {
     .container {
-      max-width: 60%;
+      width: 60%!important;
     }
   }
   
@@ -53,67 +53,67 @@ body {
 
   /* ===================== Buttons */
   button {
-    background: transparent;
-    border: 3px solid white;
-    border-width: 1px 8px 8px 1px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 12px 30px;
-    cursor: pointer;
-    letter-spacing: 2px;
+    background: transparent!important;
+    border: 3px solid white!important;
+    border-width: 1px 8px 8px 1px!important;
+    color: white!important;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 17px!important;
+    text-transform: uppercase!important;
+    padding: 12px 30px!important;
+    cursor: pointer!important;
+    letter-spacing: 2px!important;
   }
   
   button:hover {
-    background: #DBFF00;
-    font-weight: 800;
-    color: black;
-    border: 3px solid #FF2875;
-    border-width: 1px 8px 8px 1px;
+    background: #DBFF00!important;
+    font-weight: 800!important;
+    color: black!important;
+    border: 3px solid #FF2875!important;
+    border-width: 1px 8px 8px 1px!important;
   }
   
   /* ===================== Text Styles */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif!important;
+    text-transform: uppercase!important;
+    letter-spacing: 2px!important;
   }
   
   h1, h2, h3 {
-    font-weight: 900;
+    font-weight: 900!important;
   }
   
   h1 {
-    font-size: 50px;
+    font-size: 50px!important;
   }
 
   h2 {
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 30px;
+    font-weight: 600!important;
+    letter-spacing: 1px!important;
+    font-size: 30px!important;
   }
   
   p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    line-height: 1.5em;
-    letter-spacing: 0.4px;
+    font-family: 'Montserrat', sans-serif!important;
+    font-weight: 400!important;
+    text-transform: none!important;
+    line-height: 1.5em!important;
+    letter-spacing: 0.4px!important;
   }
   
   h1, h2, h3, h4, h5, h6, p, button {
-    color: white;
+    color: white!important;
   }
   
 
 
   /* ================== containers */
   .container-border{
-    border: 2px solid white;
-    padding: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-width: 2px 8px 8px 2px;
+    border: 2px solid white!important;
+    padding: 25px!important;
+    margin-top: 25px!important;
+    margin-bottom: 25px!important;
+    border-width: 2px 8px 8px 2px!important;
   }
