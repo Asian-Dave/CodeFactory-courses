@@ -13,8 +13,38 @@
 
 .cards {
   margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 section {
   height: 100vh;
+}
+
+.course {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  .course {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+  }
+  .cards {
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .card-img {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  section {
+    height: 180vh;
+  }
 }

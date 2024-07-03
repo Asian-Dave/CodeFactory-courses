@@ -1,7 +1,7 @@
 <div class="container">
   <div>
     <h1>Full Course</h1>
-    <p>
+    <p class="course-text">
       The coding course provides a thorough introduction to programming,
       covering key concepts such as algorithms, data structures, and software
       development principles. Through a blend of interactive lessons, practical
@@ -14,9 +14,9 @@
   </div>
 
   <section class="mt-5 mb-5">
-    <div class="row row-cols-1 course">
+    <div class="course">
       @for(course of courses; track course; let i = $index){
-      <div class="cards d-flex justify-content-around align-items-center">
+      <div class="cards">
         <div class="card-img">
           <a routerLink="/full-course-page" class="card-link"
             ><img [src]="course.image" class="img"
