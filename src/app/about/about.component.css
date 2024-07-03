@@ -1,0 +1,17 @@
+img {
+    width: 50%;
+    height: auto;
+    
+}
+
+.container-border {
+    border: 1px solid white !important;
+    text-align: center;
+
+  }
+
+
+  .aboutheader{
+    text-align: center;
+  }
+
