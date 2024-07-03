@@ -9,12 +9,14 @@
   top: 0;
   transition: background-color 500ms;
   z-index: 1000;
-  box-shadow: 0px 2px 4px -1px white;
-  background-color: rgba(0, 0, 0, 0.466);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* box-shadow: 0px 2px 4px -1px white; */
+  /* background-color: rgba(0, 0, 0, 0.466); */
 }
 
 .primary-header.sticking {
-  background-color: rgba(0, 0, 0, 0.466);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* background-color: rgba(0, 0, 0, 0.466); */
 }
 
 .primary-header.sticking .navlist a {
@@ -35,17 +37,17 @@
 
 /* Logo styles */
 .logo {
-  width: 100px;
-  height: 100px;
-  margin: 0.5rem;
+  width: 120px;
+  height: 120px;
+  margin: 0.2rem;
 }
 
 /* Navigation list styles */
 .navlist {
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
   list-style: none;
-  font-size: large;
+  /* font-size: large; */
   margin: 0;
   padding: 0;
 }
