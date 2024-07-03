@@ -2,6 +2,7 @@
 <div class="testimonials">
   <div *ngFor="let testimonial of testimonials" class="testimonial">
     <img
+      draggable="false"
       [src]="testimonial.photo"
       [alt]="testimonial.name"
       class="testimonial-photo"

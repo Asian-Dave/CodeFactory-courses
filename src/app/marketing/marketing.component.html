@@ -1,13 +1,16 @@
 <div class="container">
-
-<div class="partners">
-<h1 class="partners-txt">our partners</h1>
-    <br><br>
+  <div class="partners">
+    <h1 class="partners-txt">our partners</h1>
+    <br /><br />
     <div class="carousel-container">
-        <div class="carousel">
-          <img *ngFor="let logo of duplicatedLogos" [src]="logo" class="carousel-logo">
-        </div>
+      <div class="carousel">
+        <img
+          draggable="false"
+          *ngFor="let logo of duplicatedLogos"
+          [src]="logo"
+          class="carousel-logo"
+        />
       </div>
-      
     </div>
+  </div>
 </div>
