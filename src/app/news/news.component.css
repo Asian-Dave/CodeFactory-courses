@@ -1,3 +1,46 @@
-li{
-   list-style: none;
-}
+
+
+.staff-item {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   gap: 20px;
+   align-items: center;
+   padding: 20px;
+   width: 50%;
+   margin: 0 auto;
+   
+ }
+ 
+ .staff-image {
+   width: 100%;
+   height: auto;
+ }
+ 
+ .staff-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+ }
+ 
+ .staff-text h2 {
+   margin: 0 0 10px;
+   font-size: 24px;
+ }
+ 
+ .staff-text p {
+   margin: 0;
+   font-size: 16px;
+ }
+ 
+ .headerstaff {
+   font-size: x-small;
+   
+ }
+
+ h1{
+   text-align: center;
+ }
+
+ .imgpointer {
+   cursor:pointer;
+ }
