@@ -1,0 +1,18 @@
+.video {
+  width: 866px;
+  height: 487px;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  .video {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1280px) {
+  .video {
+    width: 600px;
+    height: 487px;
+  }
+}
