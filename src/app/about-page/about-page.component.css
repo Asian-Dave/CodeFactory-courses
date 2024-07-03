@@ -11,11 +11,7 @@
   gap: 20px;
 }
 
-.images {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
+
 
 .images img {
   width: 200px;
@@ -99,9 +95,12 @@ h1 {
   font-size: 18px;
 }
 
-.teacher-info p {
-  margin: 0;
+
+.teacher-text{
   font-size: 14px;
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
 }
 
 h2{
@@ -119,22 +118,17 @@ h2{
   text-align: center;
 }
 
-.location-header {
-  font-size: 14px;
-  color: #333;
-}
 
 .location-text {
   font-size: 18px;
-  color: #666;
+  
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .location-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: auto;
-  border-radius: 8px;
   margin-top: 20px;
 }

@@ -130,4 +130,9 @@
   display: block;
   left: 160px;
   top: -5px;
+  background-color: rgba(0, 0, 0, 0.614);
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.614);
 }
