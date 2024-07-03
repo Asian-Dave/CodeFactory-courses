@@ -82,7 +82,7 @@ h1 {
   align-items: center;
   text-align: center;
   padding: 10px;
-  border: 1px solid #ddd; 
+  /* border: 1px solid #ddd;  */
   width: 65%;
   margin: 0 auto;
 }
