@@ -16,17 +16,17 @@ export class TestimonialsComponent implements OnInit {
     {
       name: 'Sarah Sultan',
       photo: '/images/testimonials/testimonial-1.png',
-      text: 'This course was amazing! It really helped me understand the fundamentals of Angular. Highly recommended!',
+      text: '"This course was amazing! It really helped me understand the fundamentals of Angular. Highly recommended!"',
     },
     {
       name: 'Alice Smith',
       photo: '/images/testimonials/testimonial-2.png',
-      text: 'I loved this course! The instructor was clear and concise, and the material was very well-organized.',
+      text: '"I loved this course! The instructor was clear and concise, and the material was very well-organized."',
     },
     {
       name: 'John Robot',
       photo: '/images/testimonials/testimonial-3.png',
-      text: 'Great course! I learned so much and feel much more confident in my coding skills now.',
+      text: '"Great course! I learned so much and feel much more confident in my coding skills now."',
     },
   ];
   constructor() {}
