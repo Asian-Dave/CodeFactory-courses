@@ -1,34 +1,32 @@
-
 .teacher-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    
-  }
-  
- .carousel .carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-  }
-.n{
-    margin: 10px;
-}
-.head{
-    text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.teacher-photo.img-fluid{
-  margin:5px !important;
-
+.carousel .carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+.n {
+  margin: 10px;
+}
+.head {
+  text-align: center;
 }
 
-.carousel-caption p{
-  margin-left: 70px;
-  text-align: justify;bottom: ;
+.teacher-photo.img-fluid {
+  margin: 5px !important;
+}
+
+.carousel-caption p {
+  margin-left: 100px;
+  text-align: justify;
+  bottom: ;
   text-align: left;
 }
