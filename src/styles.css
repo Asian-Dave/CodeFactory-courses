@@ -17,7 +17,7 @@ body::before {
   mix-blend-mode: var(--blending) !important;
   content: "" !important;
   position: absolute !important;
-  width: 100% !important;
+  width: 200% !important;
   height: 100% !important;
   top: 0 !important;
   left: 0 !important;
@@ -145,4 +145,24 @@ button {
   margin-top: 25px !important;
   margin-bottom: 25px !important;
   border-width: 2px 8px 8px 2px !important;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  body::before {
+    mix-blend-mode: var(--blending) !important;
+    content: "" !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    background: radial-gradient(circle, #17d4e8 20%, transparent 40%) 80% 20%,
+      radial-gradient(circle, #ff5757 20%, transparent 40%) 20% 80%,
+      radial-gradient(circle, #17d4e8 20%, transparent 40%) 80% 80% !important;
+    background-repeat: no-repeat !important;
+    background-position: 10% 20%, 50% 50%, 80% 80% !important;
+    filter: blur(100px) !important;
+    opacity: 0.6 !important;
+    z-index: -1 !important;
+  }
 }
