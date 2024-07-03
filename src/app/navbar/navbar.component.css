@@ -37,8 +37,8 @@
 
 /* Logo styles */
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   margin: 0.2rem;
 }
 
@@ -92,7 +92,7 @@
     display: block;
     width: 1.5rem;
     height: 3px;
-    background-color: transparent;
+    background-color: white;
     margin-bottom: 0.25rem;
     transition: transform 0.3s ease;
   }
@@ -135,4 +135,12 @@
 
 .dropdown-menu {
   background-color: rgba(0, 0, 0, 0.614);
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0.2rem;
+  }
 }

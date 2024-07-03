@@ -4,7 +4,7 @@
   bottom: 0;
   width: 100%;
   height: fit-content;
-  padding: 80px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .main-logo {
@@ -16,5 +16,18 @@ p {
 
 .footer-card {
   width: 20rem;
-  margin: 15px auto;
+  margin: 8px auto;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  .main-logo {
+    width: 80px;
+  }
+  .footer-card {
+    width: 100%;
+    margin: 8px auto;
+  }
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1280px) {
 }
