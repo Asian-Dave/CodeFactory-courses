@@ -21,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutPageComponent,
     ContactComponent,
     ContactUsPageComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
