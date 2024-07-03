@@ -1,13 +1,15 @@
-<h4 class="head">Alumni Testimonials</h4>
-<div class="testimonials">
-  <div *ngFor="let testimonial of testimonials" class="testimonial">
-    <img
-      draggable="false"
-      [src]="testimonial.photo"
-      [alt]="testimonial.name"
-      class="testimonial-photo"
-    />
-    <h3>{{ testimonial.name }}</h3>
-    <p>{{ testimonial.text }}</p>
+<div class="container">
+  <h4 class="head">Alumni Testimonials</h4>
+  <div class="testimonials">
+    <div *ngFor="let testimonial of testimonials" class="testimonial">
+      <img
+        draggable="false"
+        [src]="testimonial.photo"
+        [alt]="testimonial.name"
+        class="testimonial-photo"
+      />
+      <h3>{{ testimonial.name }}</h3>
+      <p>{{ testimonial.text }}</p>
+    </div>
   </div>
 </div>
