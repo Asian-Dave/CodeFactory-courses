@@ -9,6 +9,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   menuOpen = false;
 
   constructor() {}
+
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }

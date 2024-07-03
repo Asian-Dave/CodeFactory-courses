@@ -1,21 +1,90 @@
 <div class="primary-header">
   <span>
-    <img class="logo" routerLink="/" src="/images/logos/main-logo.svg" alt="Codefactory" />
+    <a routerLink="/" draggable="false">
+      <img
+        draggable="false"
+        class="logo"
+        src="/images/logos/navbar-logo.svg"
+        alt="Codefactory"
+    /></a>
   </span>
   <div class="hamburger-menu" (click)="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
-  </div> 
+  </div>
   <ul class="navlist" [class.active]="menuOpen" (click)="closeMenu()">
-    <li><button routerLink="/gadgets" class="nav-btn">Courses</button></li>
-    <li><button routerLink="/about-us"class="nav-btn">News</button></li>
-    <li><button routerLink="/about-us"class="nav-btn">About us</button></li>
-    <li><button routerLink="/contact"class="nav-btn">Contact</button></li>
+    <li>
+      <div class="dropdown">
+        <button class="nav-btn dropdown-toggle" data-bs-toggle="dropdown">
+          Courses
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li>
+            <div class="dropend">
+              <li class="sub-menu">
+                <a
+                  href="#"
+                  class="dropdown-item dropdown-toggle"
+                  data-toggle="dropdown"
+                  ><span class="text-light">Full Course</span></a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark course-menu">
+                  <li>
+                    <a routerLink="" class="dropdown-item"
+                      ><span class="text-light">HTML</span></a
+                    >
+                  </li>
+                  <li>
+                    <a routerLink="" class="dropdown-item"
+                      ><span class="text-light">CSS</span></a
+                    >
+                  </li>
+                  <li>
+                    <a routerLink="" class="dropdown-item"
+                      ><span class="text-light">JavaScript</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropend">
+              <li class="sub-menu">
+                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown"
+                  ><span class="text-light">Short Course</span></a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark course-menu">
+                  <li>
+                    <a routerLink="" class="dropdown-item"
+                      ><span class="text-light">Python</span></a
+                    >
+                  </li>
+                  <li>
+                    <a routerLink="" class="dropdown-item"
+                      ><span class="text-light">C#</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li><button routerLink="/news-page" class="nav-btn">News</button></li>
+    <li>
+      <button routerLink="/about-page" class="nav-btn">About us</button>
+    </li>
+    <li>
+      <button routerLink="/contact-us-page" class="nav-btn">Contact</button>
+    </li>
+
     <li class="cart-icon">
       <a routerLink="/cart" class="fab fa-opencart"> </a>
-      <span class="items-amount"><span class="cart-amount-style"></span></span
-      >
+      <span class="items-amount"><span class="cart-amount-style"></span></span>
     </li>
   </ul>
 </div>
