@@ -75,7 +75,7 @@ button {
 }
 
 button:hover {
-  background: #dbff00 !important;
+  background: #00E0FF !important;
   font-weight: 800 !important;
   color: black !important;
   border: 3px solid #ff2875 !important;
@@ -88,10 +88,10 @@ button:hover {
 }
 
 .nav-btn:hover {
-  background: #dbff00 !important;
+  background: #00E0FF !important;
   font-weight: 800 !important;
-  color: #ff2875 !important;
-  border: 3px solid #ffffff !important;
+  color: #000000 !important;
+  border: 3px solid #ff2875 !important;
 }
 
 /* ===================== Text Styles */
