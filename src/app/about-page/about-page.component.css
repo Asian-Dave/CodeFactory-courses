@@ -5,6 +5,10 @@
   margin-bottom: 20px;
 }
 
+#about-headline{
+  margin-top: 50px;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -53,6 +57,7 @@ h1 {
 .staff-text h2 {
   margin: 0 0 10px;
   font-size: 24px;
+  text-align: left;
 }
 
 .staff-text p {
@@ -77,11 +82,11 @@ h1 {
   align-items: center;
   text-align: center;
   padding: 10px;
-  border: 1px solid #ddd; 
+  /* border: 1px solid #ddd;  */
 }
 
 .teacher-image {
-  width: 50%; 
+  width: 70%; 
   height: auto; 
   max-width: 100%; 
 }
@@ -112,23 +117,34 @@ h2{
 .location-container {
   max-width: 800px;
   margin: 50px auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 
 .location-text {
   font-size: 18px;
-  
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
 .location-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin: 20px 0 40px 0;
+}
+
+
+.google-map {
+  margin: 10%;
+  padding-bottom: 60%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
