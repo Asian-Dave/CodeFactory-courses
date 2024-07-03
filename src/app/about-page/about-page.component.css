@@ -1,0 +1,24 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .images img {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .teacher, .staff {
+    margin-bottom: 20px;
+  }
+  
+  .teacher img, .staff img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
