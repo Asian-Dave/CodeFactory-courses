@@ -34,7 +34,13 @@
   display: none;
 }
 
-@media screen and (width < 800px){
+.teacher-name-overlay {
+  background: rgba(0, 0, 50, 0.3); /* Semi-transparent background */
+  text-align: center;
+  border-radius: 50px;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
   .carousel-teachers {
     display: none;
   }
@@ -45,32 +51,23 @@
   .teacher-item {
     position: relative;
   }
-  
+
   .teacher-photo {
     border-radius: 200px;
     width: 100%;
     height: auto;
   }
-
-}
- .teacher-name-overlay {
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* left: 0; */
-  /* width: 100%; */
-  background: rgba(0, 0, 50, 0.3); /* Semi-transparent background */
-  text-align: center;
-  border-radius: 50px;
-  /*border-radius: 50px;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.8s ease;
-  */
-
 }
 
-/* .teacher-item:hover .teacher-name-overlay {
-  opacity: 1;
-} */
+@media screen and (min-device-width: 760px) and (max-device-width: 1280px) {
+  .carousel-caption p {
+    margin-left: 120px;
+    text-align: justify;
+    text-align: left;
+  }
+  .teacher-name-overlay {
+    background: rgba(0, 0, 50, 0.3); /* Semi-transparent background */
+    text-align: center;
+    border-radius: 50px;
+  }
+}
