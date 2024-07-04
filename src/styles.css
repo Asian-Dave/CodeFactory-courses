@@ -175,4 +175,7 @@ button {
     opacity: 0.6 !important;
     z-index: -1 !important;
   }
+  h1 {
+    font-size: 35px !important;
+  }
 }
