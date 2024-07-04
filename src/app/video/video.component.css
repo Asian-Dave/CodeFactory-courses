@@ -6,10 +6,9 @@
 
 @media screen and (min-device-width: 360px) and (max-device-width: 759px) {
   .video {
-    width: 300px;
+    width: 280px;
     height: 200px;
     margin: 0px auto;
-    margin-left: 7%;
   }
 }
 
