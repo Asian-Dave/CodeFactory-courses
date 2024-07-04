@@ -1,4 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { courses } from '../models/Courses';
+import { ICourse } from '../models/courses-model';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +9,11 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit, AfterViewInit {
   menuOpen = false;
+  courses: ICourse[];
 
-  constructor() {}
+  constructor() {
+    this.courses = this.getFilteredCourses();
+  }
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -41,5 +46,9 @@ export class NavbarComponent implements OnInit, AfterViewInit {
 
       navObserver.observe(scrollWatcher);
     }
+  }
+  getFilteredCourses(): ICourse[] {
+    const allowedIds = [0, 1, 2, 3, 4, 5, 6];
+    return courses.filter((course) => allowedIds.includes(course.id));
   }
 }
