@@ -11,6 +11,11 @@ export class FullCoursePageComponent {
   courses: ICourse[];
 
   constructor() {
-    this.courses = courses;
+    this.courses = this.getFilteredCourses();
+  }
+
+  getFilteredCourses(): ICourse[] {
+    const allowedIds = [0, 1, 2];
+    return courses.filter((course) => allowedIds.includes(course.id));
   }
 }
