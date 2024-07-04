@@ -14,9 +14,9 @@ interface Testimonial {
 export class TestimonialsComponent implements OnInit {
   testimonials: Testimonial[] = [
     {
-      name: 'Sarah Sultan',
+      name: 'Sarah Sutan',
       photo: '/images/testimonials/testimonial-1.png',
-      text: '"This course was amazing! It really helped me understand the fundamentals of Angular. Highly recommended!"',
+      text: '"This course was amazing! It really helped me understand Angular. Highly recommended!"',
     },
     {
       name: 'Alice Smith',
