@@ -17,7 +17,7 @@ export class TeachersComponent implements OnInit {
       name: 'Klausi Reiden',
       photo: './images/teachers/teacher-1.jpg',
       description:
-        'Klausi is an exceptional coding instructor. His ability to break down complex programming concepts into easy-to-understand lessons has greatly enhanced my understanding of software development.',
+        'Klausi is an exceptional coding instructor. His ability to break down complex programming concepts into easy-to-understand lessons has greatly enhanced our course development.',
     },
     {
       name: 'Anna Heisenberg',
