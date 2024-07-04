@@ -1,12 +1,12 @@
 .short-course-container {
-  padding: 20px;
+  margin: 15vh 0 15vh 0;
 }
 
 /* Card Styles */
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 1rem;
   justify-content: center;
 }
 
