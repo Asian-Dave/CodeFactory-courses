@@ -44,3 +44,9 @@
  .imgpointer {
    cursor:pointer;
  }
+
+ .staff-text p a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
