@@ -57,8 +57,12 @@
   text-decoration: none;
 }
 
-/* Media query for screens narrower than 645px */
-@media (max-width: 645px) {
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0.2rem;
+  }
   .navlist {
     display: none;
     flex-direction: column;
@@ -137,10 +141,20 @@
   background-color: rgba(0, 0, 0, 0.614);
 }
 
-@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
-  .logo {
-    width: 100px;
-    height: 100px;
-    margin: 0.2rem;
+@media screen and (min-device-width: 760px) and (max-device-width: 1280px) {
+  .navlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sub-menu:hover .course-menu {
+    display: block;
+    left: 160px;
+    top: -5px;
+    background-color: rgba(0, 0, 0, 0.614);
+  }
+
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.614);
   }
 }
