@@ -1,6 +1,6 @@
 <div class="container">
   <div>
-    <h1>Full Course</h1>
+    <h1>Full Courses</h1>
     <p class="course-text">
       The coding course provides a thorough introduction to programming,
       covering key concepts such as algorithms, data structures, and software
@@ -15,28 +15,32 @@
 
   <section class="mt-5 mb-5">
     <div class="course">
+      <div id="course-hover">
       @for(course of courses; track course; let i = $index){
-      <div class="cards">
-        <div class="card-img">
-          <a routerLink="/details/{{ course.id }}" class="card-link"
-            ><img [src]="course.image" class="img"
-          /></a>
-          <h5 class="text-center course-title">{{ course.title }}</h5>
+        <div class="container-border">
+          <a routerLink="/details/{{ course.id }}" class="card-link">
+            <div class="cards">
+              <div class="card-img">
+                <img [src]="course.image" class="img" />
+                <h5 class="text-center course-title">{{ course.title }}</h5>
+              </div>
+              <div class="card-body">
+                <h5 class="text-center">Course duration:</h5>
+                <p class="text-center">{{ course.duration }}</p>
+              </div>
+              <div class="card-body">
+                <h5 class="text-center">Course Fee:</h5>
+                <p class="text-center">{{ course.fee }}€</p>
+              </div>
+              <div class="card-body">
+                <h5 class="text-center">Dates:</h5>
+                <p class="text-center">{{ course.dates }}</p>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="card-body">
-          <h5 class="text-center">Course duration:</h5>
-          <p class="text-center">{{ course.duration }}</p>
-        </div>
-        <div class="card-body">
-          <h5 class="text-center">Course Fee:</h5>
-          <p class="text-center">{{ course.fee }}€</p>
-        </div>
-        <div class="card-body">
-          <h5 class="text-center">Dates:</h5>
-          <p class="text-center">{{ course.dates }}</p>
-        </div>
-      </div>
       }
     </div>
+    </div>
   </section>
-</div>
+  
