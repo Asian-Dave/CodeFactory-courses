@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { fullCourse } from '../models/Courses';
+import { courses } from '../models/Courses';
 import { ICourse } from '../models/courses-model';
 
 @Component({
@@ -11,6 +11,6 @@ export class FullCoursePageComponent {
   courses: ICourse[];
 
   constructor() {
-    this.courses = fullCourse;
+    this.courses = courses;
   }
 }

@@ -6,6 +6,7 @@ import { CourseDetailsPageComponent } from './course-details-page/course-details
 import { NewsPageComponent } from './news-page/news-page.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,7 @@ const routes: Routes = [
     path: 'about-page',
     component: AboutPageComponent,
   },
+  {path:'cart', component: CartComponent}
 ];
 
 @NgModule({

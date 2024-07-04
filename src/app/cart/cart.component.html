@@ -1,1 +1,107 @@
-<p>cart works!</p>
+<div class="cart-page-container">
+    <!-- Cart Items Section -->
+    <div class="cart-container">
+      <div class="cart-header-container">
+        <h2>Cart</h2>
+        <hr />
+      </div>
+  
+      @for(course of courses; track course.id;){
+      <div class="cart-item">
+        <img class="cart-course-img" [src]="course.image" [alt]="course.title" />
+        <p>{{ course.title }}</p>
+        <p>
+          <span class="price-style">{{ course.fee }}</span> €
+        </p>
+  
+        <div class="cart-buttons">
+          <button class="button-secondary" (click)="removeFromCart(course.id)">
+            x
+          </button>
+          <hr />
+        </div>
+      </div>
+  
+      }
+      <div class="total-container">
+        <p class="cart-total">
+          Total :
+          <span class="price-style">{{ originalTotal.toFixed(2) }}</span> €
+        </p>
+        <p class="cart-total">
+          VAT 10% : <span class="price-style">{{ total.toFixed(2) }}</span> €
+        </p>
+        @if(showDiscount){
+        <div class="cart-total">
+          <p>
+            Total amount with 25% discount:
+            <span class="price-style">{{ discountedTotal.toFixed(2) }}</span> €
+          </p>
+        </div>
+        } @else if(!showDiscount){
+        <div class="cart-total">
+          <p class="no-discount-style">
+            No discount applied, get 25% discount on 400€ purchase.
+          </p>
+        </div>
+        }
+      </div>
+      <div class="cart-actions">
+        <button class="primary-button" (click)="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+    <!-- Payment Form Section -->
+    <div class="cart-section payment-form">
+      <h2>Payment Details</h2>
+      <div class="form-group input-group">
+        <div>
+          <input type="text" id="first-name" placeholder="First Name" required />
+        </div>
+        <div>
+          <input type="text" id="last-name" placeholder="Last Name" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <input
+          type="email"
+          id="email"
+          placeholder="Your Email Address"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone" placeholder="Your Phone Number" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="country" placeholder="Your Country" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="address" placeholder="Street Name" required />
+      </div>
+      <div class="form-group input-group">
+        <div>
+          <input
+            type="text"
+            id="building-number"
+            placeholder="Building/House Number"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="flat-number"
+            placeholder="Flat Number (if applicable)"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" id="city" placeholder="City" required />
+      </div>
+      <div class="form-group">
+        <input type="text" id="postal-code" placeholder="Postal Code" required />
+      </div>
+      <button class="primary-button" type="submit">Submit Payment</button>
+    </div>
+  </div>
+  
