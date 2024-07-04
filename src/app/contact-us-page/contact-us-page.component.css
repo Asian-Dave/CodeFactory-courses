@@ -1,0 +1,44 @@
+.contact-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.contact-header {
+  padding: rem;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+select {
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23999" d="M2 0L0 2h4L2 0zM0 3l2 2 2-2H0z"/></svg>')
+    no-repeat right 5px center;
+  background-color: white;
+  padding-right: 30px;
+  background-size: 15px;
+}
