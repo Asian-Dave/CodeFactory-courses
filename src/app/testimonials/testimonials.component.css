@@ -20,7 +20,6 @@
   border: 3px solid #ffffff;
   border-radius: 0px;
   padding: 20px;
-
 }
 
 .testimonial-photo {
@@ -33,4 +32,46 @@
 .head {
   text-align: center;
   text-shadow: 50px;
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 759px) {
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-device-width: 760px) and (max-device-width: 1280px) {
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 0px;
+    padding: 20px;
+  }
 }
