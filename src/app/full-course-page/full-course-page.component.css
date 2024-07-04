@@ -12,11 +12,21 @@
 }
 
 .cards {
-  margin: 15px auto;
+  /* margin: 15px auto; */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.container-border a {
+  text-decoration: none;
+}
+
+.container-border:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: rgb(172, 141, 222, 0.3);
+}
+
 
 section {
   min-height: 100vh;
