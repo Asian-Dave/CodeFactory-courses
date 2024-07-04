@@ -18,7 +18,7 @@
       @for(course of courses; track course; let i = $index){
       <div class="cards">
         <div class="card-img">
-          <a routerLink="/full-course-page" class="card-link"
+          <a routerLink="/details/{{ course.id }}" class="card-link"
             ><img [src]="course.image" class="img"
           /></a>
           <h5 class="text-center course-title">{{ course.title }}</h5>
