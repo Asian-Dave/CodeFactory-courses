@@ -94,7 +94,7 @@
   }
 
   .cart-section {
-    max-width: 100%;
+    width: 100%;
     padding: 0.5rem;
   }
 
@@ -104,17 +104,21 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .cart-page-container {
     grid-template-columns: 1fr;
     padding: 0.5rem;
+    width: 50%;
   }
 
   .cart-section {
-    max-width: 100%;
+    width: 100%;
     padding: 0.5rem;
   }
-
+  .payment-form h2,
+  .cart-header {
+    text-align: center;
+  }
   .cart-total {
     text-align: center;
   }
