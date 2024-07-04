@@ -16,12 +16,16 @@
   <section class="mt-5 mb-5">
     <div class="course">
       <div id="course-hover">
-      @for(course of courses; track course; let i = $index){
+        @for(course of courses; track course; let i = $index){
         <div class="container-border">
-          <a routerLink="/details/{{ course.id }}" class="card-link">
+          <a
+            draggable="false"
+            routerLink="/details/{{ course.id }}"
+            class="card-link"
+          >
             <div class="cards">
               <div class="card-img">
-                <img [src]="course.image" class="img" />
+                <img draggable="false" [src]="course.image" class="img" />
                 <h5 class="text-center course-title">{{ course.title }}</h5>
               </div>
               <div class="card-body">
@@ -39,8 +43,8 @@
             </div>
           </a>
         </div>
-      }
-    </div>
+        }
+      </div>
     </div>
   </section>
-  
+</div>
