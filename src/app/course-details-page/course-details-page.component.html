@@ -1,1 +1,18 @@
-<p>course-details-page works!</p>
+<div class="course-details-container">
+    <div class="course-image">
+      <img [src]="course.image" [alt]="course.title" />
+    </div>
+    <div class="details-container">
+      <h4 class="card-title">{{ course.title }}</h4>
+      <p class="card-description">{{ course.description }}</p>
+      <div class="container-buttons-price">
+        <div class="card-buttons">
+          <button class="primary-button" (click)="addToCart(course)">
+            Book now!
+          </button>
+        </div>
+        <span class="course-price">{{ course.fee }} €</span>
+      </div>
+    </div>
+  </div>
+  

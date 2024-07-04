@@ -17,10 +17,7 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
-  {
-    path: 'course-details-page',
-    component: CourseDetailsPageComponent,
-  },
+  { path: 'details/:x', component: CourseDetailsPageComponent },
   {
     path: 'news-page',
     component: NewsPageComponent,
@@ -33,7 +30,7 @@ const routes: Routes = [
     path: 'about-page',
     component: AboutPageComponent,
   },
-  {path:'cart', component: CartComponent}
+  { path: 'cart', component: CartComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,81 @@
+.course-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.course-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0em 0em 0.2em white;
+}
+
+.details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.192);
+  border: 0.1rem solid white;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem white;
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+  color: white;
+}
+
+.card-name {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xs);
+  color: white;
+}
+
+.card-description {
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-md);
+}
+
+.container-buttons-price {
+  display: flex;
+  align-items: center;
+}
+
+.card-buttons {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.course-price {
+  margin-left: auto;
+  font-size: var(--font-size-lg);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .course-image {
+    flex: 0 0 40%;
+    margin: 0;
+  }
+  .course-details-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 767px) {
+  .details-container {
+    padding: var(--spacing-md);
+  }
+}
