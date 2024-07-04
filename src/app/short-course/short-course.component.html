@@ -1,1 +1,23 @@
-<p>short-course works!</p>
+<div class="short-course-container">
+    <section>
+      <h1 class="course-header">Short Courses</h1>
+      <div class="row">
+        @for(course of courses; track $index; let i = $index){
+        <div class="card" style="width: 18rem">
+          <div class="card-img-container">
+            <img
+              class="card-img"
+              routerLink="/details/{{ course.id }}"
+              [src]="course.image"
+              alt="Course Image"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="course-title">{{ course.title }}</h5>
+          </div>
+        </div>
+        }
+      </div>
+    </section>
+  </div>
+  

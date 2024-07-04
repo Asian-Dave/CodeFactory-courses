@@ -1,0 +1,54 @@
+.short-course-container {
+  padding: 20px;
+}
+
+/* Card Styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.card {
+  width: 18rem;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-container {
+  width: 100%;
+  height: auto;
+}
+
+.card-img {
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.course-header {
+  text-align: center;
+}
+
+.course-title {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
