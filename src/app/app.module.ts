@@ -22,6 +22,7 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     ContactUsPageComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
