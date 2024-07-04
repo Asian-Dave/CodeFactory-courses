@@ -25,7 +25,7 @@ const routes: Routes = [
     component: NewsPageComponent,
   },
   {
-    path: 'contact-us-page',
+    path: 'contact-us',
     component: ContactUsPageComponent,
   },
   {
