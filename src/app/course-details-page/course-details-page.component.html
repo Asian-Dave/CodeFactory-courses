@@ -1,18 +1,21 @@
-<div class="course-details-container">
-    <div class="course-image">
-      <img [src]="course.image" [alt]="course.title" />
-    </div>
-    <div class="details-container">
-      <h4 class="card-title">{{ course.title }}</h4>
-      <p class="card-description">{{ course.description }}</p>
-      <div class="container-buttons-price">
-        <div class="card-buttons">
-          <button class="primary-button" (click)="addToCart(course)">
-            Book now!
-          </button>
+<div class="details">
+  <div class="container">
+    <div class="course-details-container">
+      <div class="course-image">
+        <img [src]="course.image" [alt]="course.title" />
+      </div>
+      <div class="details-container">
+        <h2 class="card-title mb-5">{{ course.title }}</h2>
+        <p class="card-description">{{ course.description }}</p>
+        <div class="container-buttons-price">
+          <div class="card-buttons mt-4">
+            <button class="primary-button" (click)="addToCart(course)">
+              Book now!
+            </button>
+          </div>
+          <h2 class="course-price">{{ course.fee }} €</h2>
         </div>
-        <span class="course-price">{{ course.fee }} €</span>
       </div>
     </div>
   </div>
-  
+</div>
