@@ -42,8 +42,9 @@ export class CartComponent implements OnInit {
     this.total = this.originalTotal * 1.1;
 
     if (this.originalTotal > 500) {
-      this.discountedTotal = this.total * 0.75;
+      this.discountedTotal = this.total * 0.25;
       this.showDiscount = true;
+      this.total = this.total - this.discountedTotal;
     } else {
       this.discountedTotal = this.total;
       this.showDiscount = false;

@@ -3,6 +3,7 @@ import { courses } from '../models/Courses';
 import { ICourse } from '../models/courses-model';
 import { ActivatedRoute } from '@angular/router';
 import { CartService } from '../service/cart.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-course-details-page',
@@ -16,8 +17,8 @@ export class CourseDetailsPageComponent implements OnInit {
   constructor(private route: ActivatedRoute, private CS: CartService) {}
 
   addToCart(course: ICourse) {
+    Swal.fire("Added to Cart!", "Item has being placed!", "success");
     this.CS.addToCart(this.course);
-    console.log(this.CS.getCart());
   }
 
   ngOnInit(): void {

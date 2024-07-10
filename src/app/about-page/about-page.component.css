@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: justify;
 }
 
 
@@ -105,7 +106,7 @@ h1 {
 
 .teacher-text{
   font-size: 14px;
-  text-align: left;
+  text-align: justify;
   width: 70%;
   margin: 0 auto;
 }
@@ -149,4 +150,7 @@ h2{
   left: 0;
   top: 0;
   position: absolute;
+}
+p{
+  text-align: justify;
 }
